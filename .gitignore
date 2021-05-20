@@ -13,3 +13,6 @@ terraform.auto.tfvars
 *backup
 *.log
 .terraform.tfstate.lock.info
+
+# Kubernetes
+kubeconfig.yml
