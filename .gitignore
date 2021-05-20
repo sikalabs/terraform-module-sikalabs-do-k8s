@@ -1,0 +1,15 @@
+# System
+.DS_Store
+
+# Editor
+.vscode
+
+# Terraform
+.terraform
+terraform.tfvars
+terraform.auto.tfvars
+*.tfplan
+*.tfstate
+*backup
+*.log
+.terraform.tfstate.lock.info
