@@ -6,7 +6,7 @@ resource "digitalocean_loadbalancer" "main" {
   droplet_tag = "k8s:${digitalocean_kubernetes_cluster.main.id}"
 
   healthcheck {
-    port     = 30001
+    port     = 80
     protocol = "tcp"
   }
 
