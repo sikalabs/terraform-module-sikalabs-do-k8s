@@ -2,7 +2,7 @@ resource "digitalocean_kubernetes_cluster" "main" {
   name   = var.prefix
   region = var.digitalocean_region
   // Get available versions using: doctl kubernetes options versions
-  version = "1.20.2-do.0"
+  version = var.kubernetes_version
 
   node_pool {
     name = var.prefix
