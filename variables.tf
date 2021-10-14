@@ -4,3 +4,6 @@ variable "digitalocean_region" {}
 variable "kubernetes_version" {}
 variable "node_size" {}
 variable "node_count" {}
+variable "vpc_uuid" {
+  default = null
+}
