@@ -4,6 +4,7 @@ resource "digitalocean_loadbalancer" "main" {
   region = var.digitalocean_region
 
   droplet_tag = "k8s:${digitalocean_kubernetes_cluster.main.id}"
+  vpc_uuid = var.vpc_uuid
 
   healthcheck {
     port     = 80
